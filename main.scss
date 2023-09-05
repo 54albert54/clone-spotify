@@ -245,12 +245,12 @@ main{
 footer{
   position: relative;
   .footer-container{
-    @include areaStup(100px);
+    @include areaStup(60px);
     position: fixed;
-    bottom: 10px;
+    bottom: ;
     display: flex;
-    background-color: #84494900;
-    background-image: linear-gradient(to top, #000000, #00000098, #00000091, #0000006b, #00000008);
+    background-color: #080808;
+    background-image: linear-gradient(to top, #000000, #000000, #000000, #000000, #00000090);
   align-items: center;
   .listen-now{
     position:absolute ;
