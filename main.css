@@ -453,80 +453,6 @@ footer .footer-container .largo .info-back .icons-area .setting:hover svg path {
 footer .footer-container .largo .info-back .icons-area .lupa svg, footer .footer-container .largo .info-back .icons-area .libreria svg {
   fill: #d0cece;
 }
-footer .footer-container .largo .info-song {
-  padding: 40px 24px 0;
-  display: flex;
-  width: 430px;
-  flex-direction: column;
-}
-footer .footer-container .largo .info-song img {
-  margin-bottom: 40px;
-}
-footer .footer-container .largo .info-song .barra-container {
-  position: relative;
-  display: flex;
-  margin-top: 30px;
-  width: 100%;
-  justify-content: space-between;
-}
-footer .footer-container .largo .info-song .barra-container .barra2 {
-  position: absolute;
-  top: 55px;
-  background-color: #454545;
-  height: 4px;
-  width: 90vw;
-  top: -10px;
-  border-radius: 50%;
-}
-footer .footer-container .largo .info-song .barra-container .barra {
-  position: absolute;
-  top: 55px;
-  background-color: #d0cece;
-  height: 4px;
-  animation: crecerEncoger 20s ease-in-out infinite;
-  top: -10px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  border-radius: 50%;
-}
-footer .footer-container .largo .info-song .barra-container .barra .dot {
-  position: relative;
-  width: 10px;
-  height: 10px;
-  background: #d0cece;
-  border-radius: 50%;
-}
-footer .footer-container .largo .info-song .controles .main-control {
-  align-items: center;
-  display: flex;
-  margin-bottom: 20px;
-  justify-content: space-between;
-}
-footer .footer-container .largo .info-song .controles .main-control .icon svg {
-  fill: #d0cece;
-}
-footer .footer-container .largo .info-song .controles .mas-controles {
-  align-items: center;
-  display: flex;
-  margin-bottom: 20px;
-  justify-content: space-between;
-}
-footer .footer-container .largo .info-song .controles .mas-controles .more-icons {
-  align-items: center;
-  display: flex;
-  width: 100px;
-  justify-content: space-between;
-}
-footer .footer-container .largo .info-song .controles .more-info {
-  border-radius: 20px 20px 0 0;
-  padding: 0 10px 10px 10px;
-  width: 100%;
-  height: 80px;
-  color: #d0cece;
-  background-color: #222020;
-  padding: 20px;
-}
 
 .invisible {
   transform: translateY(930px);
@@ -539,12 +465,97 @@ footer .footer-container .largo .info-song .controles .more-info {
   .largo {
     top: 0px;
     right: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: red;
+    width: 926px;
+    height: 428px;
+    background-image: linear-gradient(to bottom, #5728ab, #412a87, #312762, #25213d, #1a1a1a);
   }
-  .listen-now {
-    background-color: greenyellow;
+  .largo .name-song {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .largo img {
+    width: 200px;
+  }
+  .largo .info-song {
+    padding: 40px 24px 0;
+    display: flex;
+    width: 430px;
+  }
+  .largo .info-song img {
+    margin-bottom: 40px;
+  }
+  .largo .info-song .barra-container {
+    position: absolute;
+    right: 50px;
+    display: flex;
+    margin-top: 30px;
+    width: 430px;
+    justify-content: space-between;
+  }
+  .largo .info-song .barra-container .barra2 {
+    position: absolute;
+    top: 55px;
+    background-color: #454545;
+    height: 4px;
+    width: 100%;
+    top: -10px;
+    border-radius: 50%;
+  }
+  .largo .info-song .barra-container .barra {
+    position: absolute;
+    top: 55px;
+    background-color: #d0cece;
+    height: 4px;
+    animation: crecerEncoger 20s ease-in-out infinite;
+    top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 50%;
+  }
+  .largo .info-song .barra-container .barra .dot {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: #d0cece;
+    border-radius: 50%;
+  }
+  .largo .info-song .controles {
+    position: absolute;
+    right: 40px;
+  }
+  .largo .info-song .controles .main-control {
+    width: 450PX;
+    align-items: center;
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+  }
+  .largo .info-song .controles .main-control .icon svg {
+    fill: #d0cece;
+  }
+  .largo .info-song .controles .mas-controles {
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  .largo .info-song .controles .mas-controles .more-icons {
+    align-items: center;
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+  }
+  .largo .info-song .controles .more-info {
+    border-radius: 20px 20px 0 0;
+    padding: 0 10px 10px 10px;
+    width: 100%;
+    height: 80px;
+    color: #d0cece;
+    background-color: #222020;
+    padding: 20px;
   }
 }
 @media screen and (max-width: 431px) {
@@ -556,9 +567,80 @@ footer .footer-container .largo .info-song .controles .more-info {
     right: 0;
     width: 100vw;
     height: 100vh;
-    background-color: red;
+    background-image: linear-gradient(to bottom, #5728ab, #412a87, #312762, #25213d, #1a1a1a);
   }
-  .listen-now {
-    background-color: greenyellow;
+  .info-song {
+    padding: 40px 24px 0;
+    display: flex;
+    width: 430px;
+    flex-direction: column;
+  }
+  .info-song img {
+    margin-bottom: 40px;
+  }
+  .info-song .barra-container {
+    position: relative;
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .info-song .barra-container .barra2 {
+    position: absolute;
+    top: 55px;
+    background-color: #454545;
+    height: 4px;
+    width: 90vw;
+    top: -10px;
+    border-radius: 50%;
+  }
+  .info-song .barra-container .barra {
+    position: absolute;
+    top: 55px;
+    background-color: #d0cece;
+    height: 4px;
+    animation: crecerEncoger 20s ease-in-out infinite;
+    top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 50%;
+  }
+  .info-song .barra-container .barra .dot {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: #d0cece;
+    border-radius: 50%;
+  }
+  .info-song .controles .main-control {
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  .info-song .controles .main-control .icon svg {
+    fill: #d0cece;
+  }
+  .info-song .controles .mas-controles {
+    align-items: center;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  .info-song .controles .mas-controles .more-icons {
+    align-items: center;
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+  }
+  .info-song .controles .more-info {
+    border-radius: 20px 20px 0 0;
+    padding: 0 10px 10px 10px;
+    width: 100%;
+    height: 80px;
+    color: #d0cece;
+    background-color: #222020;
+    padding: 20px;
   }
 }/*# sourceMappingURL=main.css.map */

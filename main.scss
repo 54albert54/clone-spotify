@@ -395,27 +395,56 @@ footer{
       }
     }
     }
+  }
+  
+}
+}
+.invisible{
+  transform: translateY(930px);
+}
 
+
+@media screen and (min-width:430px) {
+  body{
+    background-color:$mainColor;
+  }
+  .largo{
+    top: 0px;
+    right: 0;
+    width: 926px;
+    height: 428px;
+    background-image: linear-gradient(to bottom, #5728ab, #412a87, #312762, #25213d, #1a1a1a);
+    .name-song{
+      
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+    img{
+      width: 200px;
+    }
     .info-song{
       padding: 40px 24px 0;
       display: flex;
       width: 430px;
-      flex-direction: column;
+     
       img{
         margin-bottom: 40px;
       }
       .barra-container{
-        position: relative;
+        position:absolute;
+        right: 50px;
         display: flex;
         margin-top: 30px;
-        width: 100%;
+        width: 430px;
         justify-content: space-between;
         .barra2{
           position: absolute;
             top: 55px;
           background-color: #454545;
           height: 4px;
-          width: 90vw;
+          width: 100%;
           top: -10px;
           border-radius: 50%;
         }
@@ -440,10 +469,13 @@ footer{
         }
       }
       .controles{
+        position: absolute;
+        right: 40px;
         .main-control{
+          width: 450PX;
         align-items: center;
         display: flex;
-        margin-bottom: 20px;
+        margin-top: 80px;
         justify-content: space-between;
         .icon{
           svg{
@@ -471,27 +503,8 @@ footer{
       }
     }
   }
-  
-}
-}
-.invisible{
-  transform: translateY(930px);
-}
-
-
-@media screen and (min-width:430px) {
-  body{
-    background-color:$mainColor;
-  }
-  .largo{
-    top: 0px;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: red;
-  }
   .listen-now{
-    background-color:greenyellow;
+   
   }
 }
 
@@ -504,9 +517,83 @@ footer{
     right: 0;
     width: 100vw;
     height: 100vh;
-    background-color: red;
+    background-image: linear-gradient(to bottom, #5728ab, #412a87, #312762, #25213d, #1a1a1a);
   }
   .listen-now{
-    background-color:greenyellow;
+   
+  }
+  .info-song{
+    padding: 40px 24px 0;
+    display: flex;
+    width: 430px;
+    flex-direction: column;
+    img{
+      margin-bottom: 40px;
+    }
+    .barra-container{
+      position: relative;
+      display: flex;
+      margin-top: 30px;
+      width: 100%;
+      justify-content: space-between;
+      .barra2{
+        position: absolute;
+          top: 55px;
+        background-color: #454545;
+        height: 4px;
+        width: 90vw;
+        top: -10px;
+        border-radius: 50%;
+      }
+        .barra{
+        position: absolute;
+          top: 55px;
+        background-color: $justWhite;
+        height: 4px;
+        animation: crecerEncoger 20s ease-in-out infinite;
+        top: -10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border-radius: 50%;
+        .dot{
+          position: relative;
+          width: 10px;
+          height: 10px;
+          background: $justWhite;
+          border-radius: 50%;
+        }
+      }
+    }
+    .controles{
+      .main-control{
+      align-items: center;
+      display: flex;
+      margin-bottom: 20px;
+      justify-content: space-between;
+      .icon{
+        svg{
+          fill: $justWhite;
+        }
+     }
+      }
+      .mas-controles{
+        align-items: center;
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        .more-icons{
+          align-items: center;
+        display: flex;
+        width: 100px;
+        justify-content: space-between;
+        }
+      }
+      .more-info{
+        border-radius:20px 20px 0 0 ;
+        @include areaStup(80px);
+        padding: 20px;
+      }
+    }
   }
 }
