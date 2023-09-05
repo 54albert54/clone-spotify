@@ -18,4 +18,3 @@ a ver que tal
 
 
 ## [Visita la pagina](https://54albert54.github.io/clone-spotify/)
-### [Linkedin](www.linkedin.com/in/angel-bernechea)
